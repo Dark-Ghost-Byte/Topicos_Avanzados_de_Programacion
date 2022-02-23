@@ -1,0 +1,78 @@
+.fondoHeader{
+    -fx-background-color: #1c1a1b;
+}
+.fondoPantalla{
+    -fx-background-color: #000000;
+}
+.btnCuadro{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/check-box-empty.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}
+.btnPincel{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/artistic-brush.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}
+.btnCirculo{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/circle-shape-outline.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}
+.btnBorrador{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/double-sided-eraser.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}
+.btnRemove{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/remove.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}
+.btnSave{
+    -fx-background-radius: 5em;
+    -fx-min-width: 30px;
+    -fx-min-height :30px;
+    -fx-max-width: 30px;
+    -fx-max-height :30px;
+    -fx-background-color: #0f0f0f;
+    -fx-background-image: url("./iconos/save.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 60% 60%;
+    -fx-background-position: 50% 50%;
+}

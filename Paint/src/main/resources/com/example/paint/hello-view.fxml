@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane onMouseDragOver="#arrastrar" prefHeight="600.0" prefWidth="1000.0" styleClass="fondoPantalla" stylesheets="@estilos.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paint.HelloController">
+   <top>
+      <HBox prefHeight="70.0" prefWidth="200.0" styleClass="fondoHeader" stylesheets="@estilos.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Paint" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <HBox prefHeight="70.0" prefWidth="580.0" spacing="5.0">
+               <children>
+                  <Slider />
+                  <Button maxHeight="73.0" maxWidth="68.0" mnemonicParsing="false" prefHeight="73.0" prefWidth="68.0" styleClass="btnCuadro" />
+                  <Button mnemonicParsing="false" onAction="#pincel" prefHeight="25.0" prefWidth="25.0" styleClass="btnPincel" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="btnCirculo" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="btnBorrador" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="btnRemove" />
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0" styleClass="btnSave" />
+                  <ColorPicker fx:id="comboColor" onAction="#cambiarColor" />
+                  <ComboBox prefWidth="150.0" />
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Canvas fx:id="lienzo" height="750.0" onMouseDragged="#arrastrar" width="750.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
