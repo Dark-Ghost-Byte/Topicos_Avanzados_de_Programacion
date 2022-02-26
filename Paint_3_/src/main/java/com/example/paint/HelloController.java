@@ -10,6 +10,7 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.Slider;
+import javafx.scene.effect.ColorAdjust;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 
@@ -72,7 +73,7 @@ public class HelloController {
             }//LLAVE Y
 
         }else if (miCombo.getSelectionModel().getSelectedIndex() == 2){
-            ctx.setFill(Color.WHITE);
+            ctx.setFill(Color.web("#0f0f0f"));
             ctx.fillRect(0,0, lienzo.getWidth(), lienzo.getHeight());
             ctx.setFill(Color.BLACK);
             ctx.fillOval(0,0, lienzo.getWidth(), lienzo.getHeight());
