@@ -1,0 +1,10 @@
+.fondoEstilos{
+     -fx-background-image: url("../img/fondo.jpg");
+     -fx-background-size: 100% 100%;
+}
+.fondoPane{
+     -fx-background-color: rgba(3,3,3,0.5);
+}
+.fondoVbox{
+     -fx-background-color: rgba(255,255,255,0.25);
+}

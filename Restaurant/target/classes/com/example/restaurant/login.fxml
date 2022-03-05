@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" styleClass="fondoEstilos" stylesheets="@estilos/estilos.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurant.LoginController">
+   <children>
+      <Pane prefHeight="500.0" prefWidth="700.0" styleClass="fondoPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="96.0" layoutY="14.0" text="RESTAURANT" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="45.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.47" light="$null" specularConstant="0.14" specularExponent="2.33" surfaceScale="2.66">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Label>
+            <VBox alignment="CENTER" layoutX="129.0" layoutY="89.0" prefHeight="176.0" prefWidth="243.0" spacing="20.0" styleClass="fondoVbox">
+               <children>
+                  <TextField fx:id="txtUser" promptText="Usuario:" />
+                  <PasswordField fx:id="txtPassword" promptText="Contraseña:" />
+                  <JFXButton onAction="#ingresar" ripplerFill="WHITE" text="INGRESAR" />
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
