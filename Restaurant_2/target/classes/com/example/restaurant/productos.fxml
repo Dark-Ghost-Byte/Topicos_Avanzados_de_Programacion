@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="500.0" prefWidth="750.0" styleClass="fondo" stylesheets="@estilos/estilos.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurant.ProductosController">
+   <children>
+      <Label text="PRODUCTOS" textFill="#ebebeb">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="486.0" prefWidth="710.0" spacing="10.0">
+         <children>
+            <VBox prefHeight="438.0" prefWidth="270.0" spacing="5.0">
+               <children>
+                  <Label text="Nombre del producto:" textFill="WHITE" />
+                  <TextField />
+                  <Label text="Precio:" textFill="WHITE" />
+                  <TextField />
+               </children>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </VBox>
+            <TableView prefHeight="438.0" prefWidth="173.0" HBox.hgrow="ALWAYS">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+               <HBox.margin>
+                  <Insets top="20.0" />
+               </HBox.margin>
+            </TableView>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
