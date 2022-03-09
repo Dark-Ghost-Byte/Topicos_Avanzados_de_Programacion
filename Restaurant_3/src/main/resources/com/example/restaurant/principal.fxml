@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefWidth="750.0" styleClass="fondo" stylesheets="@estilos/estilos.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurant.PrincipalController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="600.0" styleClass="header" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="RESTAURANT" textFill="#fe711b">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <font>
+                  <Font name="Bell MT" size="26.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <JFXButton ripplerFill="#fe711b" text="MENÚ" textFill="WHITE" />
+            <JFXButton ripplerFill="#fe711b" text="PEDIDOS" textFill="WHITE" />
+            <JFXButton onAction="#btnProductos" ripplerFill="#fe711b" text="PRODUCTOS" textFill="WHITE" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="imgPerfil">
+               <image>
+                  <Image url="@img/imgperfil.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="Nombre Usuario" textFill="WHITE">
+               <HBox.margin>
+                  <Insets right="14.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="11.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <HBox fx:id="contenedor" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
